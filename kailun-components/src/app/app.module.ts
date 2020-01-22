@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
+import { AuthModule } from './auth/auth.module';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +15,14 @@ import { AuthComponent } from './auth/auth.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
+    RouterModule.forRoot([
+      {
+        path: 'auth',
+        component: AuthComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
