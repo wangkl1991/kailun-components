@@ -12,12 +12,13 @@ import { AuthComponent } from './auth.component';
   declarations: [SigninComponent, SignupComponent],
   imports: [
     CommonModule,
-    RouterModule.forRoot([
+    RouterModule.forChild([
       {
         path: 'auth', component: AuthComponent,
         children: [
           // {path: '', redirectTo: 'signin', pathMatch: 'full'},
           {path: 'signin', component: SigninComponent},
+          {path: 'signup', component: SignupComponent}
       ]  
       }
     ])
