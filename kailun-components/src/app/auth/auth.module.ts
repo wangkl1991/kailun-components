@@ -5,6 +5,7 @@ import { SignupComponent } from './signup/signup.component';
 import { RouterModule } from '@angular/router';
 
 import { AuthComponent } from './auth.component';
+import { MaterialModule } from '../modules/material.module';
 
 
 
@@ -12,6 +13,7 @@ import { AuthComponent } from './auth.component';
   declarations: [SigninComponent, SignupComponent],
   imports: [
     CommonModule,
+    MaterialModule,
     RouterModule.forChild([
       {
         path: 'auth', component: AuthComponent,

@@ -10,7 +10,9 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
 import { WelcomeComponent } from './welcome/welcome.component';
+import {MatNativeDateModule} from '@angular/material/core';
 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatNativeDateModule,
     AuthModule,
     RouterModule.forRoot([
       {
