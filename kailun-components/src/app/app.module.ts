@@ -13,12 +13,14 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import {MatNativeDateModule} from '@angular/material/core';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { DyGridComponent } from './dy-grid/dy-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    DyGridComponent
   ],
   imports: [
     BrowserModule,
