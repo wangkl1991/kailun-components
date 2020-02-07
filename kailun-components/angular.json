@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "kailun-components"
+  "defaultProject": "kailun-components",
+  "cli": {
+    "analytics": false
+  }
 }
